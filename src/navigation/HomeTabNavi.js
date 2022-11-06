@@ -5,6 +5,7 @@ import React from "react";
 import Home from "../screens/Home";
 import Scan from "../screens/Scan";
 import History from "../screens/History";
+import Setting from "../screens/Setting";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
@@ -14,7 +15,7 @@ import HomeSub from "./HomeSub";
 
 const Tab = createBottomTabNavigator();
 
-const HomeTabNavi = () => {
+const HomeTabNavi = ({ navigation }) => {
   return (
     <Tab.Navigator>
       <Tab.Screen

@@ -20,7 +20,7 @@ export default H2;
 const styles = StyleSheet.create({
   H2: {
     fontSize: 18,
-    fontWeight: 300,
+    fontWeight: "bold",
     fontFamily: "RedHatDisplay_SemiBold",
     color: "#000",
   },
