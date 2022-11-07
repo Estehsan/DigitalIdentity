@@ -6,9 +6,9 @@ import Setting from "./../screens/Setting";
 
 const Stack = createNativeStackNavigator();
 
-const Navigation = () => {
+const Navigation = ({ navigation }) => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="HomeTabNavi">
       {/* <Stack.Screen
         options={{headerShown: false}}
         name="AuthTabNavi"
@@ -20,7 +20,16 @@ const Navigation = () => {
         component={HomeTabNavi}
       />
       <Stack.Screen
-        options={{ headerShown: false }}
+        options={{
+          // header back icon in blue color
+          headerBackTitleVisible: false,
+          headerTintColor: "white",
+          headersize: 20,
+          // header background color in green color
+          headerStyle: {
+            backgroundColor: "#3937B9",
+          },
+        }}
         name="Setting"
         component={Setting}
       />

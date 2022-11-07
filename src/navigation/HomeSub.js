@@ -4,6 +4,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/Home";
 import Credentials from "../screens/HomeSub/Credentials";
 import FinalID from "../screens/HomeSub/FinalID";
+import Setting from "../screens/Setting";
+
 import { AntDesign } from "@expo/vector-icons";
 
 const Stack = createNativeStackNavigator();
@@ -14,7 +16,7 @@ const HomeSub = ({ navigation }) => {
       <Stack.Screen
         options={{
           headerRight: () => (
-            <Pressable onPress={navigation.navigate("Setting")}>
+            <Pressable onPress={() => navigation.navigate("Setting")}>
               <AntDesign name="setting" size={30} color="black" />
             </Pressable>
           ),
@@ -38,14 +40,6 @@ const HomeSub = ({ navigation }) => {
         }}
         name="FinalID"
         component={FinalID}
-      />
-      <Stack.Screen
-        options={{
-          // hide this screen
-          tabBarVisible: false,
-        }}
-        name="Setting"
-        component={Setting}
       />
     </Stack.Navigator>
   );

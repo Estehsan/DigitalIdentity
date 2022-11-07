@@ -41,8 +41,8 @@ const HomeTabNavi = ({ navigation }) => {
             />
           ),
         }}
-        name="History"
-        component={History}
+        name="Scan"
+        component={Scan}
       />
       <Tab.Screen
         options={{
@@ -51,8 +51,8 @@ const HomeTabNavi = ({ navigation }) => {
             <Ionicons name="timer-outline" size={size} color={color} />
           ),
         }}
-        name="Scan"
-        component={Scan}
+        name="History"
+        component={History}
       />
     </Tab.Navigator>
   );
