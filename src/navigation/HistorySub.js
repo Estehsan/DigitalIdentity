@@ -1,52 +1,49 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "../screens/Home";
-import Credentials from "../screens/HomeSub/Credentials";
-import FinalID from "../screens/HomeSub/FinalID";
-import Setting from "../screens/Setting";
-
+import History from "../screens/History";
 import { AntDesign } from "@expo/vector-icons";
+import AdminHistory from "./../screens/HistorySub/AdminHistory";
 
 const Stack = createNativeStackNavigator();
 
-const HomeSub = ({ navigation }) => {
+const HistorySub = ({ navigation }) => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{}}>
       <Stack.Screen
         options={{
+          tabBarShowLabel: false,
+          headerStyle: {
+            shadowColor: "transparent",
+            elevation: 0,
+          },
+          headerTitle: "",
           headerRight: () => (
-            <Pressable onPress={() => navigation.navigate("Setting")}>
+            <Pressable
+              style={{ marginRight: 20 }}
+              onPress={() => navigation.navigate("Setting")}>
               <AntDesign name="setting" size={30} color="black" />
             </Pressable>
           ),
         }}
-        name="Home"
-        component={Home}
-      />
-      <Stack.Screen
-        options={{
-          headerTitle: "Credentials",
-          headerStyle: {
-            backgroundColor: "#fff",
-            shadowColor: "transparent",
-            elevation: 0,
-          },
-        }}
-        name="Credentials"
-        component={Credentials}
+        name="History"
+        component={History}
       />
       <Stack.Screen
         options={{
           headerTitle: "",
+          headerStyle: {
+            shadowColor: "transparent",
+            elevation: 0,
+          },
         }}
-        name="FinalID"
-        component={FinalID}
+        name="AdminHistory"
+        component={AdminHistory}
       />
     </Stack.Navigator>
   );
 };
 
-export default HomeSub;
+export default HistorySub;
 
 const styles = StyleSheet.create({});

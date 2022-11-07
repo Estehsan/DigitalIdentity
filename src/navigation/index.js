@@ -8,14 +8,28 @@ const Stack = createNativeStackNavigator();
 
 const Navigation = ({ navigation }) => {
   return (
-    <Stack.Navigator initialRouteName="HomeTabNavi">
+    <Stack.Navigator
+      screenOptions={{
+        elevation: 0,
+        shadowColor: "#000000",
+        shadowOffset: { width: 0, height: 10 }, // change this for more shadow
+        shadowOpacity: 0.4,
+        shadowRadius: 6,
+      }}
+      initialRouteName="HomeTabNavi">
       {/* <Stack.Screen
         options={{headerShown: false}}
         name="AuthTabNavi"
         component={AuthTabNavi}
       /> */}
       <Stack.Screen
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          headerStyle: {
+            shadowColor: "transparent",
+            elevation: 0,
+          },
+        }}
         name="HomeTabNavi"
         component={HomeTabNavi}
       />
@@ -24,9 +38,11 @@ const Navigation = ({ navigation }) => {
           // header back icon in blue color
           headerBackTitleVisible: false,
           headerTintColor: "white",
-          headersize: 20,
+
           // header background color in green color
           headerStyle: {
+            shadowColor: "transparent",
+            elevation: 0,
             backgroundColor: "#3937B9",
           },
         }}

@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: "100%",
     paddingVertical: 20,
-    alignItems: "center",
+    paddingHorizontal: 50,
     // SHADOW
     shadowColor: "#3937B9",
     shadowOffset: {
