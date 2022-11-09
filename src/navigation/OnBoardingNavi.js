@@ -6,11 +6,12 @@ import {
   onBoardingOne,
   onBoardingThree,
   onBoardingTwo,
+  PendingVerification,
 } from "../screens/OnBoardingSub";
 
 const Stack = createNativeStackNavigator();
 
-const OnBoardingNavi = () => {
+const OnBoardingNavi = ({ navigation }) => {
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -32,6 +33,11 @@ const OnBoardingNavi = () => {
         options={{ headerShown: false }}
         name="onBoardingFour"
         component={onBoardingFour}
+      />
+      <Stack.Screen
+        options={{ headerShown: false }}
+        name="PendingVerification"
+        component={PendingVerification}
       />
     </Stack.Navigator>
   );

@@ -5,5 +5,6 @@ import P from "./P";
 import Btn from "./Btn";
 import ListBar from "./ListBar";
 import Gap from "./Gap";
+import BackgroundOnboard from "./BackgroundOnboard";
 
-export { H1, H2, H3, P, Btn, ListBar, Gap };
+export { H1, H2, H3, P, Btn, ListBar, Gap, BackgroundOnboard };
