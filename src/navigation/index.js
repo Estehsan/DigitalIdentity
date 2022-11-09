@@ -3,6 +3,7 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeTabNavi from "./HomeTabNavi";
 import Setting from "./../screens/Setting";
+import OnBoardingNavi from "./OnBoardingNavi";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,12 +17,13 @@ const Navigation = ({ navigation }) => {
         shadowOpacity: 0.4,
         shadowRadius: 6,
       }}
-      initialRouteName="HomeTabNavi">
-      {/* <Stack.Screen
-        options={{headerShown: false}}
-        name="AuthTabNavi"
-        component={AuthTabNavi}
-      /> */}
+      // initialRouteName="HomeTabNavi">
+      initialRouteName="OnBoardingNavi">
+      <Stack.Screen
+        options={{ headerShown: false }}
+        name="OnBoardingNavi"
+        component={OnBoardingNavi}
+      />
       <Stack.Screen
         options={{
           headerShown: false,

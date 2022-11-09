@@ -6,7 +6,7 @@ import H3 from "./H3";
 const Btn = ({ children, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.btn}>
-      <H3>{children}</H3>
+      {children}
     </TouchableOpacity>
   );
 };

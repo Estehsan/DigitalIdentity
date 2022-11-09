@@ -7,6 +7,7 @@ import FinalID from "../screens/HomeSub/FinalID";
 import Setting from "../screens/Setting";
 
 import { AntDesign } from "@expo/vector-icons";
+import { H1, H2 } from "../components/basics";
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,13 @@ const HomeSub = ({ navigation }) => {
     <Stack.Navigator>
       <Stack.Screen
         options={{
+          headerTitle: "",
+          headerStyle: {
+            shadowColor: "transparent",
+            elevation: 0,
+            backgroundColor: "transparent",
+          },
+          headerLeft: () => <H2>DIGITAL IDENTITY</H2>,
           headerRight: () => (
             <Pressable onPress={() => navigation.navigate("Setting")}>
               <AntDesign name="setting" size={30} color="black" />

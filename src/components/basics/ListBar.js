@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   left: {
-    paddingHorizontal: 45,
+    paddingHorizontal: 22,
     paddingVertical: 10,
   },
   gap: {
