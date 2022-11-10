@@ -5,7 +5,7 @@ const H3 = ({ children, color }) => {
   return (
     <Text
       style={{
-        fontFamily: "RedHatDisplay_regular",
+        fontFamily: "RedHatDisplay-Light",
         fontSize: 15,
         color: color ? color : "black",
       }}>

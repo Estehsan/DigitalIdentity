@@ -22,7 +22,7 @@ export default H1;
 const styles = StyleSheet.create({
   H1: {
     fontWeight: "bold",
-    fontFamily: "RedHatDisplay_SemiBold",
+    fontFamily: "RedHatDisplay-SemiBold",
     color: "#000",
   },
 });

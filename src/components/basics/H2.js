@@ -10,7 +10,7 @@ const H2 = ({ children, color, textAlign }) => {
           color: color ? color : "#000",
           textAlign: textAlign ? textAlign : "left",
         },
-      ]}> 
+      ]}>
       {children}
     </Text>
   );
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   H2: {
     fontSize: 18,
     fontWeight: "bold",
-    fontFamily: "RedHatDisplay_SemiBold",
+    fontFamily: "RedHatDisplay-SemiBold",
     color: "#000",
   },
 });
