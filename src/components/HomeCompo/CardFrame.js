@@ -1,16 +1,20 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
 import React from "react";
 import { H1, H2, H3 } from "../basics";
+
+const { width } = Dimensions.get("window");
 
 const CardFrame = ({ title, name, id, image, color }) => {
   return (
     <View
-      style={[
-        styles.MainFrame,
-        {
-          backgroundColor: color ? color : "#F8DD45",
-        },
-      ]}>
+      style={{
+        backgroundColor: color ? color : "#F8DD45",
+        width: width * 0.8,
+        height: width / 2,
+        borderRadius: 20,
+        marginHorizontal: 20,
+        paddingVertical: 10,
+      }}>
       <View style={styles.Top}>
         <H1 color={color ? "#fff" : "#000"}>{title}</H1>
       </View>
