@@ -19,11 +19,11 @@ const Navigation = ({ navigation }) => {
       }}
       // initialRouteName="HomeTabNavi">
       initialRouteName="OnBoardingNavi">
-      {/* <Stack.Screen
+      <Stack.Screen
         options={{ headerShown: false }}
         name="OnBoardingNavi"
         component={OnBoardingNavi}
-      /> */}
+      />
       <Stack.Screen
         options={{
           headerShown: false,

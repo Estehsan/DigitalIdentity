@@ -6,7 +6,7 @@ import { ActivityIndicator, MD2Colors } from "react-native-paper";
 const PendingVerification = ({ navigation }) => {
   React.useEffect(() => {
     setTimeout(() => {
-      // navigation.push("HomeNavi");
+      navigation.push("HomeTabNavi");
     }, 5000);
   }, [navigation]);
 

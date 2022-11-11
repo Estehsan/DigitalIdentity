@@ -13,10 +13,12 @@ const CardFrame = ({ title, name, id, image, color }) => {
         height: width / 2,
         borderRadius: 20,
         marginHorizontal: 20,
-        paddingVertical: 10,
+        paddingVertical: 5,
       }}>
       <View style={styles.Top}>
-        <H1 color={color ? "#fff" : "#000"}>{title}</H1>
+        <H1 fontSize={24} color={color ? "#fff" : "#000"}>
+          {title}
+        </H1>
       </View>
       <View
         style={[
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   Top: {
-    paddingHorizontal: 90,
+    paddingHorizontal: width / 20,
   },
   line: {
     width: "100%",

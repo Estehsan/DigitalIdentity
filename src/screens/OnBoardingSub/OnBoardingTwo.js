@@ -5,6 +5,16 @@ import { FourPin } from "../../components/onBoardCompo";
 import { Button } from "react-native-paper";
 
 const OnBoardingTwo = ({ navigation }) => {
+  const pin1Ref = React.useRef();
+  const pin2Ref = React.useRef();
+  const pin3Ref = React.useRef();
+  const pin4Ref = React.useRef();
+
+  const [pin1, setPin1] = React.useState("");
+  const [pin2, setPin2] = React.useState("");
+  const [pin3, setPin3] = React.useState("");
+  const [pin4, setPin4] = React.useState("");
+
   return (
     <BackgroundOnboard>
       <View style={styles.main}>
